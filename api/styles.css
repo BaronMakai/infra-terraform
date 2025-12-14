@@ -1,0 +1,77 @@
+/* Global Styles */
+
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-family: Arial, sans-serif;
+  line-height: 1.15;
+  color: #333;
+  background-color: #f0f0f0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+/* Header */
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+  border-bottom: 1px solid #444;
+}
+
+.header h1 {
+  margin-bottom: 0.5em;
+}
+
+/* Main Content */
+.main-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2em;
+  border: 1px solid #ddd;
+  border-radius: 0.25em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.main-content h2 {
+  margin-top: 0.5em;
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+  clear: both;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+  .header, .main-content, .footer {
+    width: 100%;
+    padding: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .header, .main-content, .footer {
+    padding: 0.5em;
+  }
+}
